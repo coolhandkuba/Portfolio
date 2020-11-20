@@ -6,20 +6,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/9f68da69d1.js" crossorigin="anonymous"></script>
     <title>Index</title>
+    <style>
+      footer {
+        background:#343a40;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 2.5rem
+      }
+      #page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+      #content-wrap {
+        padding-bottom: 2.5rem;    
+      }
+    </style>
 </head>
-<body style=background-image:url("https://images.pexels.com/photos/301717/pexels-photo-301717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<body style="background-image:url('https://images.pexels.com/photos/301717/pexels-photo-301717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+<div id="page-container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand">Jakub Marchel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
@@ -29,10 +43,10 @@
           </ul>
         </div>
       </nav>
-
+      <div id="content-wrap">
       <br><br>
       <div class="container">
-      <div class="card mb-3" style="max-width: 720px;">
+      <div class="card mb-3">
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-4 col-sm-4 col-4">
             <img src="Assets/JM.jpg" class="card-img" alt="Photo of Jakub">
@@ -40,16 +54,27 @@
           <div class="col-lg-8 col-md-8 col-sm-8 col-8">
             <div class="card-body">
               <h5 class="card-title">About Me</h5>
-              <p class="card-text">I was born in Warsaw, Poland in 1985. My family moved to the United States in 1991 and have been living in Florida even since. I graduated FAU with a bachelors in Economics 2014 and received my PMP certifcate in 2017. I have worked in mnaufacturing and construction for hospitality and engineering.</p>
-              <br>
-                <p>I am taking this bootcamp to enhance my technical skills so that I can possibly pursue a project management career in the software industry. I am super excited to be learning how to code!!!
+              <p class="card-text">I was born in Warsaw, Poland in 1985. My family moved to the United States in 1991 and have been living in South Florida even since. I graduated FAU with a Bachelors of Science in Economics 2014 and received my PMP certifcate in 2017. I have worked in manufacturing and construction for hospitality and engineering, but have fallen in love with coding.</p>
+              
+                <p>I am well versed in the following technologies HTML, CSS, JavaScript, JQuery, API's, Node.js. Check out my projects in the links above and downloand my resume in the link below. You can also access my GitHub and linkedin profiles for further reference. Currently live in Sunrise Florida with my beautiful wife and our two <span><i class="fas fa-cat"></i></span> and one <span><i class="fas fa-dog"></i></span>  
               </p>
-              <p class="card-text"><small class="text-muted">This is Jakub Marchel and I approve this messege</small></p>
+              <a href="./Assets/Jakub Marchel Resume.pdf" download="Resume">Jakub Marchel Resume</a>
+              <br>
+              <a href="./Assets/PMP_Certificate.pdf" download="Resume">PMP Certificate</a>
+              <br>
+              <a href="mailto:coolhandkuba@hotmail.com">Email Me Here!!!</a>
+              <br>
+              <a href="https://github.com/coolhandkuba"><i class="fab fa-github fa-2x"></i></a>
+              <a href="https://www.linkedin.com/in/jakub-marchel/"><i class="fab fa-linkedin fa-2x"></i></a>
+              
             </div>
           </div>
         </div>
         </div>
       </div>
-    
+    </div>
+      <footer>
+      </footer>
+    </div>
 </body>
 </html>
