@@ -82,6 +82,7 @@ body{
 }
 
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body style="background-image:url('https://images.pexels.com/photos/301717/pexels-photo-301717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
 <div id="page-container">
@@ -104,17 +105,17 @@ body{
       <div id="content-wrap">
       <br><br>
       <div class="container">
-      <div class="card mb-3">
+      <div class="card mb-3" id="about">
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-            <img class='card-img-top' src="Assets/JM.jpg" class="card-img" alt="Photo of Jakub">
+            <img class='card-img-top' src="Assets/JM.jpg" class="card-img" alt="Photo of Jakub" id="image">
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-8">
-            <div class="card-body">
+            <div class="card-body" id="info">
               <h5 class="card-title">About Me</h5>
               <p class="card-text-right">I was born in Warsaw Poland in 1985. My family moved to the United States in 1991 and we have been living in South Florida ever since. I graduated FAU with a Bachelors of Science in Economics in 2014 and received my PMP certifcate in 2017. I have worked in manufacturing and construction for hospitality and engineering but have fallen in love with coding.</p>
               
-                <p>I am well versed in the following technologies: HTML, CSS, JavaScript, JQuery, API's, and Node.js. Check out my projects in the links above and downloand my resume in the link below. You can also access my GitHub and linkedin profiles for further reference. I currently live in Sunrise Florida with my beautiful wife and our two <span><i class="fas fa-cat"></i></span> and one <span><i class="fas fa-dog"></i></span>.
+                <p>I am well versed in the following technologies/languages: HTML5, CSS, JavaScript, JQuery, API's, Node.js, SQL, databases and servers. Check out my projects in the links above and downloand my resume in the link below. You can also access my GitHub and linkedin profiles for further reference. I currently live in Sunrise Florida with my beautiful wife and our two <span><i class="fas fa-cat"></i></span> and one <span><i class="fas fa-dog"></i></span>.
               </p>
               <a href="./Assets/Jakub Marchel Resume.pdf" download="Resume">Jakub Marchel Resume</a>
               <br>
@@ -133,5 +134,11 @@ body{
       <footer>
       </footer>
     </div>
+    <script>
+      $(document).ready(function(){ 
+        $("#about").hide().fadeIn(2000);
+        $("#image").hide().fadeIn(2000);
+});
+    </script>
 </body>
 </html>

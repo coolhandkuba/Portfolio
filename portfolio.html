@@ -81,6 +81,7 @@ body{
     font-family: 'Poppins', 'Helveita', sans-serif;
 }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body style="background-image:url('https://images.pexels.com/photos/301717/pexels-photo-301717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
   <div id="page-container"> 
@@ -105,7 +106,7 @@ body{
         <div class="container" style="max-width: 90%;">
           <div class="row">
                 <div class="card-deck">
-                  <div class="card">
+                  <div class="card" id="card1">
                     <img class="card-img-top" src="./Assets/meApp_Image.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">meApp Project</h5>
@@ -117,7 +118,7 @@ body{
                         <a href="https://github.com/lmrujana/meApp_project/">View Application Code</a>
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="card2">
                       <img class="card-img-top" src="./Assets/myTeam.PNG" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Employee Generator</h5>
@@ -127,7 +128,7 @@ body{
                           <a href="https://github.com/coolhandkuba/Employee-Generator/">View Application Code</a>
                         </div>
                     </div>
-                  <div class="card">
+                  <div class="card" id="card3">
                     <img class="card-img-top" src="./Assets/PasswordGenerator-Image.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Random Password Generator</h5>
@@ -139,7 +140,7 @@ body{
                         <a href="https://github.com/coolhandkuba/Password-Generator/">View Application Code</a>
                       </div>
                   </div>
-                  <div class="card">
+                  <div class="card" id="card4">
                     <img class="card-img-top" src="./Assets/DailyPlanner Image.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Daily Planner</h5>
@@ -159,6 +160,15 @@ body{
     <br>
     <footer>
     </footer>
+    
+    <script>
+      $(document).ready(function(){ 
+        $("#card1").hide().fadeIn(2000);
+        $("#card2").hide().fadeIn(2500);
+        $("#card3").hide().fadeIn(3000);
+        $("#card4").hide().fadeIn(3500);
+});
+    </script>
   </div> 
 </body> 
 </html>
